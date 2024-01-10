@@ -7,55 +7,53 @@
     <title>Cadastre-se</title>
 </head>
 <body>
-    <div class="background">
-        <a class="logo" href="../index.html">Alugaki</a>
-        <a class="slogan">O seu lar digital, onde a hospedagem ganha vida!</a>
-    </div>
-    <form action="" method="post">
-        <div class="register">
-            <label class="title">Cadastre-se</label>
-        <div class="line">
-            <div class="column">
-                <label>Seu nome:</label>
-                <input type="text" name="name" placeholder="Maria José Bezerra">
-            </div>
-            <div class="column">
-                <label>Sua cidade:</label>
-                <input type="text" name="" placeholder="São José dos Pinhais">
-            </div>
-            <div class="column">
-                <label>Seu e-mail:</label>
-                <input type="email" name="email" placeholder="nome@email.com">
-            </div>
-            <div class="column">
-                <label>Seu endereço:</label>
-                <input type="tel" name="" placeholder="Rua Benedito da Costa, 25">
-            </div>
-            <div class="column">
-                <label>Seu CPF:</label>
-                <input type="text" name="" placeholder="555.555.555-55">
-            </div>
-            <div class="column">
-                <label>CEP:</label>
-                <input type="tel" name="" placeholder="33333-333">
-            </div>
-            <div class="column">
-                <label>Seu celular:</label>
-                <input type="tel" name="" placeholder="11985763185">
-            </div>
-            <div class="column">
-                <label>Seu estado:</label>
-                <input type="text" name="" placeholder="Alagoas">
-            </div>
-            <div class="column">
-                <label>Sua senha:</label>
-                <input type="password" name="" placeholder="***********">
-            </div>
-            <div class="column">
-                <button type="submit">Cadastrar</button>
+    <div class="container">
+        <div class="login">
+            <a class="logo" href="../index.html">Alugaki</a>
+            <img src="../../icons/user2.svg" alt="">
+            <div class="txt-btn-entrar">
+                <label class="text">Já possui conta?</label>
+                <a class="BtnLogin" href="../entrar/">Entrar</a>
             </div>
         </div>
+        <form action="" method="post">
+            <div class="form-register">
+                <label class="title">Cadastre-se</label>
+                <div class="line">
+                    <div class="column">
+                        <label>Seu nome:</label>
+                        <input type="text" name="name" placeholder="Maria José Bezerra" required>
+                    </div>
+                    <div class="column">
+                        <label>Seu celular:</label>
+                        <input type="tel" name="" placeholder="11985763185" required>
+                    </div>
+                    <div class="column">
+                        <label>Seu CPF:</label>
+                        <input type="text" name="" placeholder="555.555.555-55" required>
+                    </div>
+                    <div class="column">
+                        <label>Seu e-mail:</label>
+                        <input type="email" name="email" placeholder="nome@email.com" required>
+                    </div>
+                    <div class="column">
+                        <label>CEP:</label>
+                        <input type="tel" name="" placeholder="33333-333" required>
+                    </div>
+                    <div class="column">
+                        <label>Sua senha:</label>
+                        <input type="password" name="" placeholder="***********" required>
+                    </div>
+                    <div class="column">
+                        <label>Data de nascimento:</label>
+                        <input type="date" name="" required>
+                    </div>
+                    <div class="column" id="btnRegister">
+                        <button class="BtnRegister" type="submit">Cadastrar</button>
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
-    </form>
 </body>
 </html>

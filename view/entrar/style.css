@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato Regular', sans-serif;
+}
+
+input, select{
+    height: 33px;
+    width: 250px;
+    box-shadow: none;
+    padding-left: 15px;
+    margin: 7px;
+    border-radius: 3px;
+    border: 1px solid #6C6C6C;
+}
+
+select{
+    width: 267px;
+}
+
+button{
+    margin-top: 20px;
+    width: 160px;
+    padding: 10px 0px 10px 0px;
+    justify-content: center;
+    border-radius: 10px;
+    background: #5D3587;
+    color: white;
+    border: none;
+}
+
+label{
+    font-size: 23pt;
+    color: #5D3587;
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 800px;
+    height: 500px;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 272px;
+    background-color: #EBD8FF;
+    border-radius: 15px;
+    display: flex;
+}
+
+.title{
+    background-color: #5D3587;
+    left: 0;
+    border-radius: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login{
+    background-color: #EBD8FF;
+    border-radius: 15px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login{
+    width: fit-content;
+}
+
+.logo{
+    color: white;
+    text-decoration: none;
+    font-size: 25pt;
+}
+
+.register{
+    font-size: 9pt;
+    color: #5D3587;
+    margin-top: 10px;
+}

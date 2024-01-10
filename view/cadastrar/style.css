@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+label{
+    font-size: 10pt;
+    color: #5D3587;
+}
+
+input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #6C6C6C;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 10px;
+}
+
+form{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-left: 50px;
+    width: 140px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+    background: #5D3587;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.title{
+    font-size: 19pt;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.register{
+    width: 800px;
+    /* height: 500px; */
+    background-color: #EBD8FF;
+    padding: 40px 80px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.line{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px 140px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #5D3587;
+    z-index: 0;
+    justify-content: space-between;
+    padding: 25px 70px;
+
+}
+
+.logo{
+    font-size: 30pt;
+    font-weight: bold;
+}
+
+.slogan{
+    margin-left: 30px;
+    font-size: 15pt;
+}

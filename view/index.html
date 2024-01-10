@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Alugaki</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="#" class="logo">Alugaki</a>
+                <a class="slogan">O seu lar digital, onde a hospedagem ganha vida!</a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <svg class="user" xmlns="http://www.w3.org/2000/svg" width="100" height="42" viewBox="0 0 120 62" fill="none">
+                        <rect x="0.5" y="0.5" width="119" height="61" rx="19.5" stroke="#6C6C6C"/>
+                        <path d="M85 6C71.1895 6 60 17.1895 60 31C60 44.8105 71.1895 56 85 56C98.8105 56 110 44.8105 110 31C110 17.1895 98.8105 6 85 6ZM85 15.6774C89.8992 15.6774 93.871 19.6492 93.871 24.5484C93.871 29.4476 89.8992 33.4194 85 33.4194C80.1008 33.4194 76.129 29.4476 76.129 24.5484C76.129 19.6492 80.1008 15.6774 85 15.6774ZM85 50.3548C79.0827 50.3548 73.7802 47.6734 70.2319 43.4798C72.127 39.9113 75.8367 37.4516 80.1613 37.4516C80.4032 37.4516 80.6452 37.4919 80.877 37.5625C82.1875 37.9859 83.5585 38.2581 85 38.2581C86.4415 38.2581 87.8226 37.9859 89.123 37.5625C89.3548 37.4919 89.5968 37.4516 89.8387 37.4516C94.1633 37.4516 97.873 39.9113 99.7681 43.4798C96.2198 47.6734 90.9173 50.3548 85 50.3548Z" fill="#6C6C6C"/>
+                        <path d="M34.1793 42.3858L23.551 30.5368C22.8163 29.7178 22.8163 28.3935 23.551 27.5833L25.3171 25.6142C26.0517 24.7953 27.2396 24.7953 27.9664 25.6142L35.5 34.0131L43.0336 25.6142C43.7682 24.7953 44.9561 24.7953 45.6829 25.6142L47.449 27.5833C48.1836 28.4022 48.1836 29.7265 47.449 30.5368L36.8207 42.3858C36.1018 43.2047 34.9139 43.2047 34.1793 42.3858Z" fill="#6C6C6C"/>
+                    </svg>
+                    <div class="dropdown-menu">
+                        <a class="menu" href="entrar/">Entrar</a>
+                        <a class="menu" href="cadastrar/">Cadastrar</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <form class="search" action="" method="get">
+        <div>
+            <div class="item-search">
+                <img class="img" src="../icons/bandeira.svg" alt="">
+                <select name="local" id="">
+                    <option value="">Local</option>
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            </div>
+            <div class="item-search">
+                <img class="img" src="../icons/calendario.svg" alt="">
+                <input type="date" name="data">
+            </div>
+            <div class="item-search">
+                <img src="../icons/hospede.svg" alt="">
+                <select name="hospedes" id="">
+                    <option value="">Hóspedes</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="Mais">6+</option>
+                </select>
+            </div>
+        </div>
+        <button class="BtnSearch" type="submit">Buscar</button>
+    </form>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

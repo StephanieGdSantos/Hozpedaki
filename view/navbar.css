@@ -15,6 +15,30 @@ a{
     text-decoration: none;
 }
 
+.user{
+    padding: 5px 10px;
+    border: 1px solid #6C6C6C;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-icon{
+    width: 30px;
+    height: 30px;
+}
+
+.username{
+    font-size: 14pt;
+    font-weight: 600;
+    color: #6C6C6C;
+}
+
+.down{
+    width: 19px;
+    height: 12px;
+}
 
 .navbar{
     width: 1280px;

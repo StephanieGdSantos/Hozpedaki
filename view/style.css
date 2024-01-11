@@ -57,7 +57,7 @@ body{
 
 .house{
     width: 303px;
-    height: 361px;
+    height: 385px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -118,7 +118,7 @@ body{
 
 .house-image{
     width: 263px;
-    height: 135px;
+    height: 160px;
     border-radius: 8px;
     overflow: hidden;
 }
@@ -129,9 +129,9 @@ body{
 
 .all-houses{
     margin-top: 60px;
-    width: 1000px;
+    width: 970px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }

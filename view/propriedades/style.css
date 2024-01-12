@@ -16,10 +16,30 @@ body{
 }
 
 .title{
-    margin-left: 70px;
+    /* margin-left: 70px; */
     color: #5D3587;
     font-weight: bold;
     font-size: 30pt;
+}
+
+.BtnRegister{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 165px;
+    height: 50px;
+    background-color: #5D3587;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.title-area{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .img{

@@ -1,0 +1,67 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    font-size: 10pt;
+    color: #5D3587;
+}
+
+h2{
+    color: #5D3587;
+    margin-bottom: 30px;
+}
+
+.form-register{
+    border-radius: 15px;
+    border: 1px solid #6C6C6C;
+    padding: 50px;
+}
+
+.two-inputs{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.two-inputs select{
+    width: 140px;
+}
+
+.side-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 18px;
+}
+
+.side-form select{
+    padding-left: 7px;
+    height: 30px;
+}
+
+.title-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.input-desc{
+    height: 222px;
+}
+
+.images{
+    border-radius: 2px;
+    border: 1px solid #6C6C6C;
+    margin-top: 18px;
+    padding: 20px;
+}

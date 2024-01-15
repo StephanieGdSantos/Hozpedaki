@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/navbar.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="../../" class="logo">Hozpedaki</a>
+                <a class="slogan">O seu lar digital, onde a hospedagem ganha vida!</a>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <div class="user">
+                        <img class="user-icon" src="../../icons/user1.svg" alt="">
+                        <a class="username">Olá</a>
+                        <img class="down" src="../../icons/down.svg" alt="">
+                    </div>
+                    <div class="dropdown-menu">
+                        <a class="menu" href="../">Sair</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-register">
+        <h2>CADASTRAR PROPRIEDADE</h2>
+        <form action="" method="post">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 160px;">
+                <div class="side-form">
+                    <div class="title-input">
+                        <label>Nome da propriedade: </label>
+                        <input class="input" type="text" placeholder="ex: Lucia Maria Menezes">
+                    </div>
+
+                    <div class="two-inputs">
+                        <div class="title-input">
+                            <label>CEP:</label>
+                            <input class="input" type="text" id="cep" placeholder="ex: 55555-555" maxlength="9">
+                        </div>
+                        
+                        <div class="title-input">
+                            <label>Estado: </label>
+                            <input class="input" type="text" placeholder="ex: Paraíba">
+                        </div>
+                    </div>
+
+                    <div class="title-input">
+                        <label>Cidade: </label>
+                        <input class="input" type="text" placeholder="ex: São João da Boa Vista">
+                    </div>
+
+                    <div class="title-input">
+                        <label>Rua/Avenida: </label>
+                        <input class="input" type="text" placeholder="ex: Rua das Alamedas">
+                    </div>
+
+                    <div class="two-inputs">
+                        <div class="title-input">
+                            <label>Bairro: </label>
+                            <input class="input" type="text" placeholder="ex: Rua das Alamedas">
+                        </div>
+                        
+                        <div class="title-input">
+                            <label>Nº: </label>
+                            <input class="input" type="text" placeholder="ex: 24">
+                        </div>
+                    </div>
+
+                    <div class="two-inputs">
+                        <div class="title-input">
+                            <label>Tamanho (m²): </label>
+                            <input class="input" type="number">
+                        </div>
+                        
+                        <div class="title-input">
+                            <label>Disponível: </label>
+                            <select name="" id="">
+                                <option value="">Selecione</option>
+                                <option value="">Sim</option>
+                                <option value="">Não</option>
+                            </select>
+                        </div>   
+                    </div>
+
+                    <div class="two-inputs">
+                        <div class="title-input">
+                            <label>Quartos: </label>
+                            <input class="input" type="number">
+                        </div>
+                        
+                        <div class="title-input">
+                            <label>Sala: </label>
+                            <input class="input" type="number">
+                        </div>
+                    </div>
+                </div>
+
+                    <!-- <div>
+                        <label>CPF:</label>
+                        <input class="input" type="text" id="cpf" placeholder="ex: 555.555.555-55" maxlength="14">
+                    </div> -->
+                <div class="side-form">
+                    <div class="two-inputs">
+                        <div class="title-input">
+                            <label>Cozinha: </label>
+                            <input class="input" type="number">
+                        </div>
+                        
+                        <div class="title-input">
+                            <label>Banheiro: </label>
+                            <input class="input" type="number">
+                        </div>
+                        
+                    </div>
+
+                    <div class="two-inputs">
+                        <div class="title-input">
+                            <label>Hóspedes: </label>
+                            <input class="input" type="number">
+                        </div>
+                        
+                        <div class="title-input">
+                            <label>Piscina: </label>
+                            <select name="" id="">
+                                <option value="">Selecione</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="two-inputs">
+                        <div class="title-input">
+                            <label>Café da Manhã: </label>
+                            <select name="" id="">
+                                <option value="">Selecione</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div>
+                        
+                        <div class="title-input">
+                            <label>Reembolsável: </label>
+                            <select name="" id="">
+                                <option value="">Selecione</option>
+                                <option value="Sim">Sim</option>
+                                <option value="Não">Não</option>
+                            </select>
+                        </div> 
+                    </div>
+
+                    <div class="title-input">
+                        <label for="">Descrição:</label>
+                        <input class="input-desc" type="text" name="" id="">
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="images">
+                <label>Fotos</label>
+                <div class="house-image" id="image1"></div>
+                <div class="house-image" id="image2"></div>
+                <div class="house-image" id="image3"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

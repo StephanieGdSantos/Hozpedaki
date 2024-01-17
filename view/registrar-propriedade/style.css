@@ -16,6 +16,20 @@ h2{
     margin-bottom: 30px;
 }
 
+button{
+    display: flex;
+    height: 50px;
+    width: 212px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #6C6C6C;
+    background: #5D3587;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
 .form-register{
     border-radius: 15px;
     border: 1px solid #6C6C6C;
@@ -57,11 +71,61 @@ h2{
 
 .input-desc{
     height: 222px;
+    padding: 10px;
+    resize: none;
 }
 
 .images{
+    width: 760px;
     border-radius: 2px;
     border: 1px solid #6C6C6C;
     margin-top: 18px;
+    margin-bottom: 40px;
     padding: 20px;
+    overflow-x: auto;
+}
+
+.input-image{
+    /* width: 400px; */
+    display: none;
+}
+
+.picture{
+    min-width: 300px;
+    min-height: 190px;
+    max-width: 300px;
+    max-height: 190px;
+    border: 2px dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    color: #A367B1;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.picture:hover{
+    background-color: #f5e8fa;
+}
+
+.picture:active{
+    background-color: #e3b6ec;
+}
+
+.picture:focus{
+    outline: 2px solid #A367B1;
+}
+
+.selected-picture{
+    max-width: 100%;
+}
+
+.BtnClear{
+    color: #6C6C6C;
+    font-size: 15px;
+    text-decoration-line: underline;
+    cursor: pointer;
 }

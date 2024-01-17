@@ -37,52 +37,52 @@
                 <div class="side-form">
                     <div class="title-input">
                         <label>Nome da propriedade: </label>
-                        <input class="input" type="text" placeholder="ex: Lucia Maria Menezes">
+                        <input class="input" type="text" placeholder="ex: Lucia Maria Menezes" required>
                     </div>
 
                     <div class="two-inputs">
                         <div class="title-input">
                             <label>CEP:</label>
-                            <input class="input" type="text" id="cep" placeholder="ex: 55555-555" maxlength="9">
+                            <input class="input" type="text" id="cep" placeholder="ex: 55555-555" maxlength="9" required>
                         </div>
                         
                         <div class="title-input">
                             <label>Estado: </label>
-                            <input class="input" type="text" placeholder="ex: Paraíba">
+                            <input class="input" type="text" placeholder="ex: Paraíba" required>
                         </div>
                     </div>
 
                     <div class="title-input">
                         <label>Cidade: </label>
-                        <input class="input" type="text" placeholder="ex: São João da Boa Vista">
+                        <input class="input" type="text" placeholder="ex: São João da Boa Vista" required>
                     </div>
 
                     <div class="title-input">
                         <label>Rua/Avenida: </label>
-                        <input class="input" type="text" placeholder="ex: Rua das Alamedas">
+                        <input class="input" type="text" placeholder="ex: Rua das Alamedas" required>
                     </div>
 
                     <div class="two-inputs">
                         <div class="title-input">
                             <label>Bairro: </label>
-                            <input class="input" type="text" placeholder="ex: Rua das Alamedas">
+                            <input class="input" type="text" placeholder="ex: Rua das Alamedas" required>
                         </div>
                         
                         <div class="title-input">
                             <label>Nº: </label>
-                            <input class="input" type="text" placeholder="ex: 24">
+                            <input class="input" type="text" placeholder="ex: 24" required>
                         </div>
                     </div>
 
                     <div class="two-inputs">
                         <div class="title-input">
                             <label>Tamanho (m²): </label>
-                            <input class="input" type="number">
+                            <input class="input" type="number" required>
                         </div>
                         
                         <div class="title-input">
                             <label>Disponível: </label>
-                            <select name="" id="">
+                            <select name="" id="" required>
                                 <option value="">Selecione</option>
                                 <option value="">Sim</option>
                                 <option value="">Não</option>
@@ -93,12 +93,12 @@
                     <div class="two-inputs">
                         <div class="title-input">
                             <label>Quartos: </label>
-                            <input class="input" type="number">
+                            <input class="input" type="number" required>
                         </div>
                         
                         <div class="title-input">
                             <label>Sala: </label>
-                            <input class="input" type="number">
+                            <input class="input" type="number" required>
                         </div>
                     </div>
                 </div>
@@ -111,12 +111,12 @@
                     <div class="two-inputs">
                         <div class="title-input">
                             <label>Cozinha: </label>
-                            <input class="input" type="number">
+                            <input class="input" type="number" required>
                         </div>
                         
                         <div class="title-input">
                             <label>Banheiro: </label>
-                            <input class="input" type="number">
+                            <input class="input" type="number" required>
                         </div>
                         
                     </div>
@@ -124,12 +124,12 @@
                     <div class="two-inputs">
                         <div class="title-input">
                             <label>Hóspedes: </label>
-                            <input class="input" type="number">
+                            <input class="input" type="number" required>
                         </div>
                         
                         <div class="title-input">
                             <label>Piscina: </label>
-                            <select name="" id="">
+                            <select name="" id="" required>
                                 <option value="">Selecione</option>
                                 <option value="Sim">Sim</option>
                                 <option value="Não">Não</option>
@@ -141,7 +141,7 @@
                     <div class="two-inputs">
                         <div class="title-input">
                             <label>Café da Manhã: </label>
-                            <select name="" id="">
+                            <select name="" id="" required>
                                 <option value="">Selecione</option>
                                 <option value="Sim">Sim</option>
                                 <option value="Não">Não</option>
@@ -150,7 +150,7 @@
                         
                         <div class="title-input">
                             <label>Reembolsável: </label>
-                            <select name="" id="">
+                            <select name="" id="" required>
                                 <option value="">Selecione</option>
                                 <option value="Sim">Sim</option>
                                 <option value="Não">Não</option>
@@ -160,17 +160,32 @@
 
                     <div class="title-input">
                         <label for="">Descrição:</label>
-                        <input class="input-desc" type="text" name="" id="">
+                        <textarea class="input-desc" name="" id="" cols="30" rows="10" required></textarea>
                     </div>
                 </div>
 
             </div>
-            
+
             <div class="images">
                 <label>Fotos</label>
-                <div class="house-image" id="image1"></div>
-                <div class="house-image" id="image2"></div>
-                <div class="house-image" id="image3"></div>
+                <div style="display: flex; gap: 20px">
+                    <label class="picture" tabindex="0">
+                        <input class="input-image" id="image1" accept="image/*" type="file" required>
+                        <div class="preview-input"></div>
+                    </label>
+                    <label class="picture">
+                        <input class="input-image" id="image2" accept="image/*" type="file" required>
+                        <div class="preview-input"></div>
+                    </label>
+                    <label class="picture">
+                        <input class="input-image" id="image3" accept="image/*" type="file" required>
+                        <div class="preview-input"></div>
+                    </label>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: flex-end; gap: 20px;">
+                <a class="BtnClear" onclick="ClearInputs()">Limpar Informações</a>
+                <button type="submit">Registrar Propriedade</button>
             </div>
         </form>
     </div>

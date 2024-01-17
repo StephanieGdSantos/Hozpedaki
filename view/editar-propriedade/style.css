@@ -122,10 +122,3 @@ button{
 .selected-picture{
     max-width: 100%;
 }
-
-.BtnClear{
-    color: #6C6C6C;
-    font-size: 15px;
-    text-decoration-line: underline;
-    cursor: pointer;
-}

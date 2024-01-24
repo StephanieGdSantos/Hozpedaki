@@ -57,8 +57,8 @@
 
     <div class="details">
         <div class="image-description">
-            <div class="image">
-                <img class="principal-image" src="../../images/beachHouse.jpg" alt="">
+            <div class="image" id="div-principal-image">
+                <img class="principal-image" id="principal-image" src="../../images/beachHouse.jpg" alt="">
             </div>
             <div class="description">
                 <div class="div-title">
@@ -77,9 +77,25 @@
                 <a class="BtnReserve" href="">Reservar</a>
             </div>
         </div>
-        <div class="all-images"></div>
+        <div class="all-images">
+            <div class="other-images">
+                <img src="../../images/beachHouse.jpg" alt="" onclick="SelectImage(this)">
+            </div>
+            <div class="other-images">
+                <img src="../../images/hotel.jpg" alt="" onclick="SelectImage(this)">
+            </div>
+            <div class="other-images">
+                <img src="../../images/beachHouse.jpg" alt="" onclick="SelectImage(this)">
+            </div>
+        </div>
     </div>
 
-    <script src="script.js"></script>
+    <script>
+        function SelectImage(selectedImage)
+        {
+            const principalImage = document.getElementById('principal-image');
+            principalImage.src = selectedImage.src;
+        }
+    </script>
 </body>
 </html>

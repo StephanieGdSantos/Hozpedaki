@@ -60,6 +60,7 @@ select, input{
 
 .details{
     display: flex;
+    flex-direction: column;
     align-items: center;
     padding: 0 105px 0 105px;
 }
@@ -73,7 +74,6 @@ select, input{
 
 .image{
     display: flex;
-    /* flex: 1; */
     align-items: center;
     width: 45%;
     height: 100%;
@@ -129,4 +129,29 @@ select, input{
     border-radius: 10px;
     background-color: #5D3587;
     color: #FFF
+}
+
+.all-images{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 70px; */
+    margin-bottom: 50px;
+    width: 100%;
+    height: 170px;
+}
+
+.other-images{
+    display: flex;
+    align-items: center;
+    width: 31%;
+    aspect-ratio: 2/1.05;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.other-images img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

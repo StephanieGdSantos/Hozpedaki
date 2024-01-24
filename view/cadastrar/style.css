@@ -13,6 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 label{
@@ -78,6 +79,7 @@ img{
     border-radius: 15px;
     display: flex;
     position: relative;
+    margin-top: 30px;
 }
 
 .login{

@@ -31,27 +31,30 @@
             </ul>
         </nav>
     </header>
-    
-    <div class="search">
-        <div>
-            <div class="item-search">
-                <label class="title" for="txt-inicio">Início</label>
-                <img class="img" src="../../icons/calendario.svg" alt="">
-                <input type="date" id="txt-inicio" name="data">
-            </div>
-            <div class="item-search">
-                <label class="title" for="txt-final">Final</label>
-                <img class="img" src="../../icons/calendario.svg" alt="">
-                <input type="date" id="txt-final" name="data">
-            </div>
-            <div class="item-search">
-                <label class="title" for="txt-hospedes">Hóspedes</label>
-                <img src="../../icons/hospede.svg" alt="">
-                <input type="text" id="txt-hospedes" value="4" readonly>
-            </div>
-            <div class="local">
-                <img src="../../icons/local.svg" alt="">
-                <span class="text-local">Jardim Boa Vista, São Paulo, Brasil</span>
+
+    <div style="display: flex; gap: 30px;">
+        <img style="cursor: pointer;" src="../../icons/arrow-left.svg" alt="" onclick="history.back()">
+        <div class="search">
+            <div>
+                <div class="item-search">
+                    <label class="title" for="txt-inicio">Início</label>
+                    <img class="img" src="../../icons/calendario.svg" alt="">
+                    <input type="date" id="txt-inicio" name="data">
+                </div>
+                <div class="item-search">
+                    <label class="title" for="txt-final">Final</label>
+                    <img class="img" src="../../icons/calendario.svg" alt="">
+                    <input type="date" id="txt-final" name="data">
+                </div>
+                <div class="item-search">
+                    <label class="title" for="txt-hospedes">Hóspedes</label>
+                    <img src="../../icons/hospede.svg" alt="">
+                    <input type="text" id="txt-hospedes" value="4" readonly>
+                </div>
+                <div class="local">
+                    <img src="../../icons/local.svg" alt="">
+                    <span class="text-local">Jardim Boa Vista, São Paulo, Brasil</span>
+                </div>
             </div>
         </div>
     </div>

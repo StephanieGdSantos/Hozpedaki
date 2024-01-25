@@ -27,11 +27,11 @@
                     </div>
                     <div class="column">
                         <label>Seu celular:</label>
-                        <input type="tel" name="" placeholder="11985763185" required>
+                        <input type="text" name="tel" id="tel" placeholder="11985763185" maxlength="14" required>
                     </div>
                     <div class="column">
                         <label>Seu CPF:</label>
-                        <input type="text" name="" placeholder="555.555.555-55" required>
+                        <input type="text" name="cpf" id="cpf" placeholder="555.555.555-55" maxlength="14" required>
                     </div>
                     <div class="column">
                         <label>Seu e-mail:</label>
@@ -39,15 +39,15 @@
                     </div>
                     <div class="column">
                         <label>CEP:</label>
-                        <input type="tel" name="" placeholder="33333-333" required>
+                        <input type="text" name="cep" id="cep" placeholder="33333-333" maxlength="9" required>
                     </div>
                     <div class="column">
                         <label>Sua senha:</label>
-                        <input type="password" name="" placeholder="***********" required>
+                        <input type="password" name="password" placeholder="***********" required>
                     </div>
                     <div class="column">
                         <label>Data de nascimento:</label>
-                        <input type="date" name="" required>
+                        <input type="date" name="birth" required>
                     </div>
                     <div class="column" id="btnRegister">
                         <button class="BtnRegister" type="submit">Cadastrar</button>
@@ -56,6 +56,8 @@
             </div>
         </form>
     </div>
+
+    <script src="script.js"></script>
 
     <span class="rights">© Todos os direitos reservados a <a class="name-right" href="https://github.com/StephanieGdSantos">Stephanie Gomes dos Santos</a></span>
 

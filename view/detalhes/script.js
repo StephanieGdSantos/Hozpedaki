@@ -21,6 +21,6 @@ function ShowMore()
     {
         text.setAttribute('data-see', 'false')
         BtnSeeMore.innerHTML = 'Ver mais'
-        text.style = '-webkit-line-clamp: 3;'
+        text.style = '-webkit-line-clamp: 4;'
     }
 }

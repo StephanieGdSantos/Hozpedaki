@@ -1,9 +1,26 @@
-function SelectImage()
+function SelectImage(selectedImage)
 {
-    console.log('div')
+    const principalImage = document.getElementById('principal-image');
+    principalImage.src = selectedImage.src;
 }
 
-function SelectImage2()
+function ShowMore()
 {
-    console.log('img')
+    let text = document.querySelector('.text-description')
+    text.style = '-webkit-line-clamp: 999;'
+
+    let BtnSeeMore = document.querySelector('#see-more')
+
+    if (text.getAttribute('data-see') === 'false')
+    {
+        text.setAttribute('data-see', 'true')
+        BtnSeeMore.innerHTML = 'Ver menos'
+        text.style = '-webkit-line-clamp: 999;'
+    }
+    else
+    {
+        text.setAttribute('data-see', 'false')
+        BtnSeeMore.innerHTML = 'Ver mais'
+        text.style = '-webkit-line-clamp: 3;'
+    }
 }

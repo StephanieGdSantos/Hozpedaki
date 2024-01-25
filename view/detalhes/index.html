@@ -13,7 +13,7 @@
         <nav class="navbar">
             <div>
                 <a href="../../" class="logo">Hozpedaki</a>
-                <a class="slogan">O seu lar digital, onde a hospedagem ganha vida!</a>
+                <span class="slogan">O seu lar digital, onde a hospedagem ganha vida!</span>
             </div>
             <ul>
                 <li class="dropdown">
@@ -35,23 +35,23 @@
     <div class="search">
         <div>
             <div class="item-search">
-                <div class="title">Início</div>
+                <label class="title" for="txt-inicio">Início</label>
                 <img class="img" src="../../icons/calendario.svg" alt="">
                 <input type="date" id="txt-inicio" name="data">
             </div>
             <div class="item-search">
-                <div class="title">Final</div>
+                <label class="title" for="txt-final">Final</label>
                 <img class="img" src="../../icons/calendario.svg" alt="">
                 <input type="date" id="txt-final" name="data">
             </div>
             <div class="item-search">
-                <div class="title">Hóspedes</div>
+                <label class="title" for="txt-hospedes">Hóspedes</label>
                 <img src="../../icons/hospede.svg" alt="">
                 <input type="text" id="txt-hospedes" value="4" readonly>
             </div>
             <div class="local">
                 <img src="../../icons/local.svg" alt="">
-                <a class="text-local">Jardim Boa Vista, São Paulo, Brasil</a>
+                <span class="text-local">Jardim Boa Vista, São Paulo, Brasil</span>
             </div>
         </div>
     </div>
@@ -63,17 +63,23 @@
             </div>
             <div class="description">
                 <div class="div-title">
-                    <div class="house-title"><a>Apartamento Aconchegante em Bairro Nobre de São Paulo</a></div>
+                    <div class="house-title">
+                        <h2>Apartamento Aconchegante em Bairro Nobre de São Paulo</h2>
+                    </div>
                     <a style="color: #5D3587; font-size: 15pt;">9 <img src="../../icons/star.svg" alt=""></a>
                 </div>
-                <div class="text-description">
-                    <a>Bem-vindo ao seu novo lar! Este encantador apartamento localizado em um 
+                <div class="div-text-description">
+                    <p data-see="false" class="text-description">Bem-vindo ao seu novo lar! Este encantador apartamento localizado em um 
                     bairro nobre de São Paulo oferece conforto e praticidade para um estilo de vida tranquilo. Ideal 
-                    para um casal, este espaço foi projetado para atender às necessidades modernas com elegância.</a>
+                    para um casal, este espaço foi projetado para atender às necessidades modernas com elegância.
+                    Bem-vindo ao seu novo lar! Este encantador apartamento localizado em um 
+                    bairro nobre de São Paulo oferece conforto e praticidade para um estilo de vida tranquilo. Ideal 
+                    para um casal, este espaço foi projetado para atender às necessidades modernas com elegância.</p>
+                    <span id="see-more" style="cursor: pointer; color: #5D358F; text-decoration: underline;" onclick="ShowMore()">Ver mais</span>
                 </div>
                 <div class="text-details">
-                    <a>1 quarto, sala, cozinha, banheiro</a>
-                    <a>2 Hóspedes</a>
+                    <span>1 quarto, sala, cozinha, banheiro</span>
+                    <span>2 Hóspedes</span>
                 </div>
                 <a class="BtnReserve" href="">Reservar</a>
             </div>
@@ -91,14 +97,9 @@
         </div>
     </div>
 
-    <div class="rights">© Todos os direitos reservados a <a class="name-right" href="https://github.com/StephanieGdSantos">Stephanie Gomes dos Santos</a></div>
+    <span class="rights">© Todos os direitos reservados a <a class="name-right" href="https://github.com/StephanieGdSantos">Stephanie Gomes dos Santos</a></span>
 
-    <script>
-        function SelectImage(selectedImage)
-        {
-            const principalImage = document.getElementById('principal-image');
-            principalImage.src = selectedImage.src;
-        }
-    </script>
+    <script src="script.js"></script>
+
 </body>
 </html>

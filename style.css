@@ -70,7 +70,7 @@ body{
 .name-house{
     font-weight: bold;
     color: #5D3587;
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .avaliation{
@@ -106,6 +106,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .house-items{

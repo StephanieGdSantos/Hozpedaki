@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/navbar.css">
+    <link rel="stylesheet" href="../global/rodape.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Hozpedaki</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div>
+                <a href="../../" class="logo">Hozpedaki</a>
+                <span class="slogan">O seu lar digital, onde a hospedagem ganha vida!</span>
+            </div>
+            <ul>
+                <li class="dropdown">
+                    <div class="user">
+                        <img class="user-icon" src="../../icons/user1.svg" alt="">
+                        <p class="username">Olá</p>
+                        <img class="down" src="../../icons/down.svg" alt="">
+                    </div>
+                    <div class="dropdown-menu">
+                        <a class="menu" href="../">Sair</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-register">
+        <h2>DADOS PESSOAIS</h2>
+        <form action="" method="post">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 160px;">
+                <div class="side-form">
+                    <div class="title-input">
+                        <label>Nome: </label>
+                        <input class="input" type="text" value="" required>
+                    </div>
+                    <div>
+                        <label>CPF:</label>
+                        <input class="input" type="text" id="cpf" value="" maxlength="14" required>
+                    </div>
+                    <div class="title-input">
+                        <label>CEP: </label>
+                        <input class="input" type="text" id="cep" value="" maxlength="8" required>
+                    </div>
+                    
+                    <div class="title-input">
+                        <label>Data de nascimento: </label>
+                        <input class="input" type="date" value="" required>
+                    </div>
+                </div>
+                <div class="side-form">
+
+                    <div class="title-input">
+                        <label>Celular (com DDD): </label>
+                        <input class="input" type="number" id="tel" value="" required>
+                    </div>
+                    <div class="title-input">
+                        <label>Rua/Avenida: </label>
+                        <input class="input" type="text" value="" required>
+                    </div>
+                    <div class="title-input">
+                        <label>Banheiro: </label>
+                        <input class="input" type="number" value="" required>
+                    </div>
+
+                    <div class="title-input">
+                        <label>Hóspedes: </label>
+                        <input class="input" type="number" value="" required>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: flex-end; gap: 20px;">
+                <button type="submit">Atualizar</button>
+            </div>
+        </form>
+    </div>
+
+    <span class="rights">© Todos os direitos reservados a <a class="name-right" href="https://github.com/StephanieGdSantos">Stephanie Gomes dos Santos</a></span>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,5 +1,4 @@
 body{
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -12,13 +11,13 @@ label{
 
 h2{
     color: #5D3587;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
-.BtnRegistrar{
+button{
     display: flex;
-    height: 50px;
-    width: 212px;
+    height: 40px;
+    width: 190px;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -26,23 +25,18 @@ h2{
     background: #5D3587;
     color: white;
     font-size: 15px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
 .form-register{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
     border-radius: 15px;
     border: 1px solid #6C6C6C;
     padding: 50px;
-}
-
-.two-inputs{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.two-inputs select{
-    width: 140px;
+    gap: 30px;
 }
 
 .side-form{
@@ -120,14 +114,4 @@ h2{
 
 .selected-picture{
     max-width: 100%;
-}
-
-.BtnClear{
-    color: #6C6C6C;
-    font-size: 15px;
-    text-decoration-line: underline;
-    appearance: none;
-    background: transparent;
-    border: none;
-    cursor: pointer;
 }

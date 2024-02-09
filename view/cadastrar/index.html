@@ -17,7 +17,8 @@
                 <a class="BtnLogin" href="../entrar/">Entrar</a>
             </div>
         </div>
-        <form action="" method="post">
+        <form action="../../routes/routes.php" method="post">
+            <input type="hidden" name="action" value="register">
             <div class="form-register">
                 <a class="title">Cadastre-se</a>
                 <div class="line">
@@ -27,7 +28,7 @@
                     </div>
                     <div class="column">
                         <label>Seu celular:</label>
-                        <input type="text" name="tel" id="tel" placeholder="11985763185" maxlength="14" required>
+                        <input type="text" name="phone" id="tel" placeholder="11985763185" maxlength="14" required>
                     </div>
                     <div class="column">
                         <label>Seu CPF:</label>
@@ -53,8 +54,8 @@
                         <label>Tipo de Usuário:</label>
                         <select name="userType" id="">
                             <option value="">Selecione</option>
-                            <option value="">Hóspede</option>
-                            <option value="">Hospedeiro</option>
+                            <option value="guest">Hóspede</option>
+                            <option value="host">Hospedeiro</option>
                         </select>
                     </div>
                 </div>

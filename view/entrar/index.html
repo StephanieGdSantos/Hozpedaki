@@ -13,15 +13,16 @@
             <a class="logo" href="../../">Hozpedaki</a>
         </div>
         <div class="login">
-            <form action="" method="post">
+            <form action="../../routes/routes.php" method="post">
+            <input type="hidden" name="action" value="login">
                 <label>Login</label>
-                <select name="" required>
+                <select name="userType" required>
                     <option value="">Selecione</option>
-                    <option value="Hóspede">Hóspede</option>
-                    <option value="Hospedeiro">Hospedeiro</option>
+                    <option value="guest">Hóspede</option>
+                    <option value="host">Hospedeiro</option>
                 </select>
-                <input type="email" name="" placeholder="nome@email.com" required>
-                <input type="password" name="" placeholder="***********" required>
+                <input type="email" name="email" placeholder="nome@email.com" required>
+                <input type="password" name="password" placeholder="***********" required>
                 <button type="submit">Entrar</button>
                 <a class="register" href="../cadastrar/">Ainda não possui conta? Cadastre-se</a>
             </form>

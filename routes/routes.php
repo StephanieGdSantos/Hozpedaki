@@ -24,16 +24,24 @@
             $UserController->Register($_POST['cpf'], $_POST['name'], $_POST['cep'], $_POST['birth'],
             $_POST['phone'], $_POST['email'], $_POST['password'], $_POST['userType']);
         }
-        else if ($_POST['action' === 'edit-register'])
+        else if ($_POST['action'] === 'edit-register')
         {
             include('../controller/userController.php');
             $UserController = new UserController();
             $UserController->EditData($_POST['name'], $_POST['cpf'], $_POST['cep'], $_POST['phone'],
             $_POST['email'], $_POST['password'], $_POST['userType']);
         }
-        else if ($_POST['action' === 'edit-house'])
+        else if ($_POST['action'] === 'register-house')
         {
+            include('../controller/hostController.php');
+            $HostController = new HostController();
 
+            //pegar o host depois pelo login
+            $HostController->RegisterHouse('ste', $_POST['title'], $_POST['cep-house'],
+            $_POST['state'], $_POST['city'], $_POST['street'], $_POST['neighborhood'], $_POST['number'],
+            $_POST['size'], $_POST['availability'], $_POST['bedrooms'], $_POST['livingRoom'], 
+            $_POST['kitchen'], $_POST['bathroom'], $_POST['guests'], $_POST['pool'], $_POST['lunch'],
+            $_POST['refundable'], $_POST['description'], $_FILES['img1'], $_FILES['img2'], $_FILES['img3']);
         }
     }
 

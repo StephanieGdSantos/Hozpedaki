@@ -43,9 +43,9 @@ inputFile1.addEventListener('change', function(event){
     const inputTarget = event.target;
     const file = inputTarget.files[0];
 
+    console.log(file);
     if(file)
     {
-
         const reader = new FileReader();
 
         reader.addEventListener('load', function(e){
@@ -64,7 +64,6 @@ inputFile1.addEventListener('change', function(event){
     }
     else
     {
-
         pictureImage[0].innerHTML = pictureImageText;
     }
 })
@@ -73,9 +72,9 @@ inputFile1.addEventListener('change', function(event){
 inputFile2.addEventListener('change', function(event){
     const inputTarget = event.target;
     const file = inputTarget.files[0];
+
     if(file)
     {
-
         const reader = new FileReader();
 
         reader.addEventListener('load', function(e){
@@ -94,7 +93,6 @@ inputFile2.addEventListener('change', function(event){
     }
     else
     {
-
         pictureImage[1].innerHTML = pictureImageText;
     }
 })
@@ -123,20 +121,6 @@ inputFile3.addEventListener('change', function(event){
     }
     else
     {
-
         pictureImage[2].innerHTML = pictureImageText;
     }
 });
-
-function ClearInputs()
-{
-    location.reload();
-}
-
-// function ClearInputs()
-// {
-//     const inputs = document.getElementsByClassName('input');
-//     inputs.forEach(inputSelected => {
-//         inputSelected.innerHTML = '';
-//     });
-// }

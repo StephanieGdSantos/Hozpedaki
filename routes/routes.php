@@ -13,16 +13,27 @@
     {
         if ($_POST['action'] === 'login')
         {
-            include('../model/classes/user.php');
-            $User = new User();
-            $User->Login($_POST['userType'], $_POST['email'], $_POST['password']);
+            include('../controller/userController.php');
+            $UserController = new UserController();
+            $UserController->Login($_POST['userType'], $_POST['email'], $_POST['password']);
         }
         else if ($_POST['action'] === 'register')
         {
-            include('../model/classes/user.php');
-            $User = new User();
-            $User->Register($_POST['cpf'], $_POST['name'], $_POST['cep'], $_POST['birth'],
+            include('../controller/userController.php');
+            $UserController = new UserController();
+            $UserController->Register($_POST['cpf'], $_POST['name'], $_POST['cep'], $_POST['birth'],
             $_POST['phone'], $_POST['email'], $_POST['password'], $_POST['userType']);
+        }
+        else if ($_POST['action' === 'edit-register'])
+        {
+            include('../controller/userController.php');
+            $UserController = new UserController();
+            $UserController->EditData($_POST['name'], $_POST['cpf'], $_POST['cep'], $_POST['phone'],
+            $_POST['email'], $_POST['password'], $_POST['userType']);
+        }
+        else if ($_POST['action' === 'edit-house'])
+        {
+
         }
     }
 

@@ -33,45 +33,46 @@
 
     <div class="form-register">
         <h2>DADOS PESSOAIS</h2>
-        <form action="" method="post">
+        <form action="../../routes/routes.php" method="post">
+            <input type="text" name="action" value="edit-register">
             <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 160px;">
                 <div class="side-form">
                     <div class="title-input">
                         <label>Nome: </label>
-                        <input class="input" type="text" value="" required>
+                        <input class="input" name="name" type="text" value="" required>
                     </div>
                     <div>
                         <label>CPF:</label>
-                        <input class="no-mutable" type="text" id="cpf" value="" readonly>
+                        <input class="no-mutable" type="text" name="cpf" id="cpf" value="" readonly>
                     </div>
                     <div class="title-input">
                         <label>CEP: </label>
-                        <input class="input" type="text" id="cep" value="" maxlength="9" required>
+                        <input class="input" type="text" name="cep" id="cep" value="" maxlength="9" required>
                     </div>
                     
                     <div class="title-input">
                         <label>Data de nascimento: </label>
-                        <input class="no-mutable" type="date" value="" readonly>
+                        <input class="no-mutable" type="date" name="birth" value="" readonly>
                     </div>
                 </div>
                 <div class="side-form">
 
                     <div class="title-input">
                         <label>Celular (com DDD): </label>
-                        <input class="input" type="text" id="tel" value="" maxlength="14" required>
+                        <input class="input" type="text" name="phone" id="tel" value="" maxlength="14" required>
                     </div>
                     <div class="title-input">
                         <label>E-mail: </label>
-                        <input class="input" type="text" value="" required>
+                        <input class="input" type="text" name="email" value="" required>
                     </div>
                     <div class="title-input">
                         <label>Senha: </label>
-                        <input class="no-mutable" type="password" value="" readonly>
+                        <input class="no-mutable" type="password" name="password" value="" readonly>
                     </div>
 
                     <div class="title-input">
                         <label>Usuário: </label>
-                        <input class="no-mutable" type="text" value="" readonly>
+                        <input class="no-mutable" type="text" name="userType" value="" readonly>
                     </div>
                 </div>
             </div>

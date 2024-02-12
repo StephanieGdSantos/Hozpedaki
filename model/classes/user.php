@@ -68,5 +68,34 @@
             
             echo json_encode($response);
         }
+
+        public function EditData($name, $cpf, $cep, $phone, $email, $password, $userType)
+        {
+            require_once('dataBase.php');
+            $conn = DataBase::getConnection();
+
+            $query = "UPDATE " . $userType . " SET name=:name, cep=:cep, phone=:phone, email=:email, password=:password
+             WHERE cpf=:cpf";
+            
+            $stmt = $conn->prepare($query);
+            $stmt->bindParam(':name', $name);
+            $stmt->bindParam(':cep', $cep);
+            $stmt->bindParam(':phone', $phone);
+            $stmt->bindParam(':email', $email);
+            $stmt->bindParam(':password', $password);
+            $stmt->bindParam(':cpf', $cpf);
+            $stmt->execute();
+
+            if ($stmt->execute()) {
+                $response = array('success' => true, 'message' => 'Usuário inserido com sucesso.');
+            } else {
+                $response = array('success' => false, 'message' => 'Erro ao inserir usuário.');
+            }
+            
+            echo json_encode($response);
+        }
+
+        public function Logout()
+        {}
     }
 ?>

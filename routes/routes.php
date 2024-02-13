@@ -43,6 +43,17 @@
             $_POST['kitchen'], $_POST['bathroom'], $_POST['guests'], $_POST['pool'], $_POST['lunch'],
             $_POST['refundable'], $_POST['description'], $_FILES['img1'], $_FILES['img2'], $_FILES['img3']);
         }
+        else if ($POST['action'] === 'edit-house')
+        {
+            include('../controller/hostController.php');
+            $HostController = new HostController();
+
+            $HostController->EditHouse($_POST['id'], $_POST['title'], $_POST['cep-house'],
+            $_POST['state'], $_POST['city'], $_POST['street'], $_POST['neighborhood'], $_POST['number'],
+            $_POST['size'], $_POST['availability'], $_POST['bedrooms'], $_POST['livingRoom'], 
+            $_POST['kitchen'], $_POST['bathroom'], $_POST['guests'], $_POST['pool'], $_POST['lunch'],
+            $_POST['refundable'], $_POST['description'], $_FILES['img1'], $_FILES['img2'], $_FILES['img3']);
+        }
     }
 
     // if ($uriSegments[4] === 'guest')

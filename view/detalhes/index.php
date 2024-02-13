@@ -33,7 +33,7 @@
     </header>
 
     <div style="display: flex; gap: 30px;">
-        <img style="cursor: pointer;5" src="../../icons/arrow-left.svg" alt="" onclick="history.back()">
+        <img style="cursor: pointer;" src="../../icons/arrow-left.svg" alt="" onclick="history.back()">
         <div class="search">
             <div>
                 <div class="item-search">

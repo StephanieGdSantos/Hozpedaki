@@ -71,7 +71,7 @@
                     <div class="house-title">
                         <h2>Apartamento Aconchegante em Bairro Nobre de São Paulo</h2>
                     </div>
-                    <a style="color: #5D3587; font-size: 15pt;">9 <img src="../../icons/star.svg" alt=""></a>
+                    <a style="display: flex; color: #5D3587; font-size: 15pt;">9 <img src="../../icons/star.svg" alt=""></a>
                 </div>
                 <div class="div-text-description">
                     <p data-see="false" class="text-description">Bem-vindo ao seu novo lar! Este encantador apartamento localizado em um 

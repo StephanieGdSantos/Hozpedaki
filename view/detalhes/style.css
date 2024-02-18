@@ -148,7 +148,6 @@ select, input{
     background-color: #5D3587;
     color: #FFF;
     border: none;
-    /* box-shadow: none; */
     cursor: pointer;
 }
 

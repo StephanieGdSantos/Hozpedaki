@@ -106,7 +106,7 @@
                     <span class="txt-details">1 quarto, 1 sala, 1 cozinha, 1 banheiro</span>
                     <span class="txt-details">2 pessoas</span>
                 </div>
-                <a class="BtnReserve" href="view/detalhes/">Reservar</a>
+                <a class="BtnReserve" href="view/detalhes/index.php?id=5">Reservar</a>
             </div>
         </div>
 

@@ -146,7 +146,10 @@ select, input{
     font-size: 11pt;
     border-radius: 10px;
     background-color: #5D3587;
-    color: #FFF
+    color: #FFF;
+    border: none;
+    /* box-shadow: none; */
+    cursor: pointer;
 }
 
 .all-images{

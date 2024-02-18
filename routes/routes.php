@@ -1,13 +1,16 @@
 <?php
-    require_once('../model/classes/dataBase.php');
+    // require_once('../model/classes/dataBase.php');
 
-    $conn = DataBase::getConnection();
+    // $conn = DataBase::getConnection();
     $return = array();
 
     $requestMethod = $_SERVER['REQUEST_METHOD'];
     $uri = $_SERVER['REQUEST_URI'];
     $uriSegments = explode('/', parse_url($uri, PHP_URL_PATH));
-
+    // foreach ($uriSegments as $uri)
+    // {
+    //     echo $uri;
+    // }
 
     if ($requestMethod === 'POST')
     {
@@ -43,7 +46,7 @@
             $_POST['kitchen'], $_POST['bathroom'], $_POST['guests'], $_POST['pool'], $_POST['lunch'],
             $_POST['refundable'], $_POST['description'], $_FILES['img1'], $_FILES['img2'], $_FILES['img3']);
         }
-        else if ($POST['action'] === 'edit-house')
+        else if ($_POST['action'] === 'edit-house')
         {
             include('../controller/hostController.php');
             $HostController = new HostController();
@@ -53,6 +56,22 @@
             $_POST['size'], $_POST['availability'], $_POST['bedrooms'], $_POST['livingRoom'], 
             $_POST['kitchen'], $_POST['bathroom'], $_POST['guests'], $_POST['pool'], $_POST['lunch'],
             $_POST['refundable'], $_POST['description'], $_FILES['img1'], $_FILES['img2'], $_FILES['img3']);
+        }
+    }
+    else if ($requestMethod === 'GET')
+    {
+        if ($uriSegments[4] === 'detalhes')
+        {
+            $idHouse = $uriSegments[5];
+            include('../controller/houseController.php');
+            $HouseController = new HouseController();
+
+            $return = $HouseController->ShowDetails($idHouse);
+            // echo $return;
+            // $novoJSON = json_encode($return, JSON_PRETTY_PRINT);
+            // file_put_contents('data.json', $novoJSON);
+            // header('Content-Type: application/json');
+            echo $return;
         }
     }
 
@@ -76,6 +95,6 @@
     //         );
     //     }
     // }
-    $novoJSON = json_encode($return, JSON_PRETTY_PRINT);
-    file_put_contents('data.json', $novoJSON);
+    // $novoJSON = json_encode($return, JSON_PRETTY_PRINT);
+    // file_put_contents('data.json', $novoJSON);
 ?>

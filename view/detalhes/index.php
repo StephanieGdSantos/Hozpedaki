@@ -32,6 +32,8 @@
         </nav>
     </header>
 
+    <form action="" method="post">
+        <input type="text" name="action" value="reserve" hidden>
     <div style="display: flex; gap: 30px;">
         <img style="cursor: pointer;" src="../../icons/arrow-left.svg" alt="" onclick="history.back()">
         <div class="search">
@@ -81,24 +83,25 @@
                     <span id="see-more" style="cursor: pointer; color: #5D358F; text-decoration: underline;" onclick="ShowMore()">Ver mais</span>
                 </div>
                 <div class="text-details">
-                    <span>1 quarto, sala, cozinha, banheiro</span>
-                    <span>2 Hóspedes</span>
+                    <span class="rooms">1 quarto, sala, cozinha, banheiro</span>
+                    <span class="guests">2 Hóspedes</span>
                 </div>
-                <a class="BtnReserve" href="">Reservar</a>
+                <button type="submit" class="BtnReserve" href="">Reservar</button>
             </div>
         </div>
         <div class="all-images">
             <div class="other-images">
-                <img src="../../images/beachHouse.jpg" alt="" onclick="SelectImage(this)">
+                <img class="img1" src="../../images/beachHouse.jpg" alt="" onclick="SelectImage(this)">
             </div>
             <div class="other-images">
-                <img src="../../images/hotel.jpg" alt="" onclick="SelectImage(this)">
+                <img class="img2" src="../../images/hotel.jpg" alt="" onclick="SelectImage(this)">
             </div>
             <div class="other-images">
-                <img src="../../images/beachHouse.jpg" alt="" onclick="SelectImage(this)">
+                <img class="img3" src="../../images/beachHouse.jpg" alt="" onclick="SelectImage(this)">
             </div>
         </div>
     </div>
+    </form>
 
     <span class="rights">© Todos os direitos reservados a <a class="name-right" href="https://github.com/StephanieGdSantos">Stephanie Gomes dos Santos</a></span>
 

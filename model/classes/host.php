@@ -74,7 +74,7 @@
 
             $idRooms = $conn->lastInsertId();
 
-            $query = "UPDATE images SET ";
+            $query = "INSERT INTO images ";
             $query .= "(
                 path
                 ) VALUES (
@@ -88,7 +88,7 @@
 
             $idImg1 = $conn->lastInsertId();
 
-            $query = "UPDATE images SET ";
+            $query = "INSERT INTO images ";
             $query .= "(
                 path
                 ) VALUES (
@@ -102,7 +102,7 @@
 
             $idImg2 = $conn->lastInsertId();
 
-            $query = "UPDATE images SET ";
+            $query = "INSERT INTO images ";
             $query .= "(
                 path
                 ) VALUES (

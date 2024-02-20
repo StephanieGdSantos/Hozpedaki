@@ -1,0 +1,125 @@
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+label{
+    font-size: 10pt;
+    color: #5D3587;
+}
+
+h2{
+    color: #5D3587;
+    /* margin-bottom: 30px; */
+}
+
+button{
+    display: flex;
+    height: 40px;
+    width: 190px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #6C6C6C;
+    background: #5D3587;
+    color: white;
+    font-size: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.form-register{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    border-radius: 15px;
+    border: 1px solid #6C6C6C;
+    padding: 50px;
+    gap: 30px;
+}
+
+.side-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 18px;
+}
+
+.side-form select{
+    padding-left: 7px;
+    height: 30px;
+}
+
+.title-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.input-desc{
+    height: 222px;
+    padding: 10px;
+    resize: none;
+}
+
+.images{
+    width: 760px;
+    border-radius: 2px;
+    border: 1px solid #6C6C6C;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.input-image{
+    opacity: 0;
+}
+
+.picture{
+    min-width: 300px;
+    min-height: 190px;
+    max-width: 300px;
+    max-height: 190px;
+    border: 2px dashed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    color: #A367B1;
+    cursor: pointer;
+    transition: background-color 300ms ease-in-out;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.picture:hover{
+    background-color: #f5e8fa;
+}
+
+.picture:active{
+    background-color: #e3b6ec;
+}
+
+.picture:focus{
+    outline: 2px solid #A367B1;
+}
+
+.selected-picture{
+    max-width: 100%;
+}
+
+.no-mutable{
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    caret-color: transparent;
+    color: #7e7e7e;
+}

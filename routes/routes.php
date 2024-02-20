@@ -73,6 +73,17 @@
             // header('Content-Type: application/json');
             echo $return;
         }
+        else if ($uriSegments[5] === 'dados-pessoais')
+        {
+            $userType = $uriSegments[4];
+            $idUser = $uriSegments[6];
+            // echo $uriSegments[7];
+            include('../controller/userController.php');
+            $UserController = new UserController();
+
+            $return = $UserController->GetPersonalData($idUser, $userType);
+            echo $return;
+        }
     }
 
     // if ($uriSegments[4] === 'guest')

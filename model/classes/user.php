@@ -95,6 +95,36 @@
             echo json_encode($response);
         }
 
+        public function GetPersonalData($id, $userType)
+        {
+            include('dataBase.php');
+            $conn = DataBase::getConnection();
+
+            $query = "SELECT * FROM " . $userType . " WHERE id=:id";
+
+            $stmt = $conn->prepare($query);
+            $stmt->bindParam(':id', $id);
+            $stmt->execute();
+            $data = $stmt->fetch(PDO::FETCH_ASSOC);
+            
+            if ($data)
+            {
+                $personalData = [
+                    "cpf" => $data['cpf'],
+                    "name" => $data['name'],
+                    "cep" => $data['cep'],
+                    "birth" => $data['birth'],
+                    "phone" => $data['phone'],
+                    "email" => $data['email'],
+                    "password" => $data['password'],
+                    "userType" => $userType
+                ];
+                return json_encode($personalData);
+            }
+                return json_encode(['error' => 'Casa não encontrada']);
+        }
+
+
         public function Logout()
         {}
     }

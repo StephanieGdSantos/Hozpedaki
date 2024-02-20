@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../global/navbar.css">
-    <link rel="stylesheet" href="../global/rodape.css">
+    <link rel="stylesheet" href="../../global/navbar.css">
+    <link rel="stylesheet" href="../../global/rodape.css">
     <link rel="stylesheet" href="style.css">
 
     <title>Hozpedaki</title>
@@ -13,18 +13,18 @@
     <header>
         <nav class="navbar">
             <div>
-                <a href="../../" class="logo">Hozpedaki</a>
+                <a href="../../../" class="logo">Hozpedaki</a>
                 <span class="slogan">O seu lar digital, onde a hospedagem ganha vida!</span>
             </div>
             <ul>
                 <li class="dropdown">
                     <div class="user">
-                        <img class="user-icon" src="../../icons/user1.svg" alt="">
+                        <img class="user-icon" src="../../../icons/user1.svg" alt="">
                         <span class="username">Olá</span>
-                        <img class="down" src="../../icons/down.svg" alt="">
+                        <img class="down" src="../../../icons/down.svg" alt="">
                     </div>
                     <div class="dropdown-menu">
-                        <a class="menu" href="../">Sair</a>
+                        <a class="menu" href="../../">Sair</a>
                     </div>
                 </li>
             </ul>
@@ -33,7 +33,7 @@
 
     <div class="form-register">
         <h2>CADASTRAR PROPRIEDADE</h2>
-        <form action="../../routes/routes.php" method="post" enctype="multipart/form-data">
+        <form action="../../../routes/routes.php" method="post" enctype="multipart/form-data">
             <input type="text" name="action" id="" value="register-house" hidden>
             <div style="display: grid; grid-template-columns: 1fr 1fr; align-items: end; gap: 160px;">
                 <div class="side-form">

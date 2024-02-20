@@ -21,6 +21,12 @@
             $User->EditData($name, $cpf, $cep, $phone, $email, $password, $userType);
         }
 
+        public function GetPersonalData($id, $userType)
+        {
+            $User = new User();
+            return $User->GetPersonalData($id, $userType);
+        }
+
         public function Logout()
         {}
     }

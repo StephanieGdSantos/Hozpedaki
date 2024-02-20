@@ -66,7 +66,7 @@
             include('../controller/houseController.php');
             $HouseController = new HouseController();
 
-            $return = $HouseController->ShowDetails($idHouse);
+            $return = $HouseController->GetDetails($idHouse);
             // echo $return;
             // $novoJSON = json_encode($return, JSON_PRETTY_PRINT);
             // file_put_contents('data.json', $novoJSON);

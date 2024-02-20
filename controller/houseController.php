@@ -3,10 +3,10 @@
 
     class HouseController
     {
-        public function ShowDetails($id)
+        public function GetDetails($id)
         {
             $House = new House();
-            return $House->ShowDetails($id);
+            return $House->GetDetails($id);
         }
     }
 ?>

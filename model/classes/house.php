@@ -1,7 +1,7 @@
 <?php
     class House
     {
-        public function ShowDetails($id)
+        public function GetDetails($id)
         {
             include('dataBase.php');
             $conn = DataBase::getConnection();

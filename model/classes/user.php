@@ -58,7 +58,6 @@
             $stmt->bindParam(':phone', $phone);
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':password', $password);
-            $stmt->execute();
 
             if ($stmt->execute()) {
                 $response = array('success' => true, 'message' => 'Usuário inserido com sucesso.');
@@ -84,7 +83,6 @@
             $stmt->bindParam(':email', $email);
             $stmt->bindParam(':password', $password);
             $stmt->bindParam(':cpf', $cpf);
-            $stmt->execute();
 
             if ($stmt->execute()) {
                 $response = array('success' => true, 'message' => 'Usuário inserido com sucesso.');
